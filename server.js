@@ -4,11 +4,11 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const app = express();
 const bp = require("body-parser");
-const usersRouter = require("./Routers/User.route");
-const admsRouter = require("./Routers/Adm.route");
-const citiesRouter = require("./Routers/City.route");
-const currenciesRouter = require("./Routers/Currency.route");
-const agentsRouter = require("./Routers/Agent.route");
+const usersRouter = require("./User.route");
+const admsRouter = require("./Adm.route");
+const citiesRouter = require("./City.route");
+const currenciesRouter = require("./Currency.route");
+const agentsRouter = require("./Agent.route");
 
 const db = mongoose.connection;
 
