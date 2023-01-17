@@ -1,4 +1,4 @@
-const CurrencyModel = require("../Models/Currency.model.js");
+const CurrencyModel = require("./Currency.model.js");
 const currencyController = {};
 
 currencyController.getAllCurrencies = async function (req, res) {

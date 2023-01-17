@@ -1,4 +1,4 @@
-const AgentModel = require("../Models/Agent.model.js");
+const AgentModel = require("./Agent.model.js");
 const agentController = {};
 
 

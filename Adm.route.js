@@ -4,8 +4,8 @@
 
 const express = require('express');
 const routerAdm = express.Router();
-const admController = require('../Controllers/Adm.controller.js');
-const verifyToken = require('../middleware/authMiddleware.js');
+const admController = require('./Adm.controller.js');
+const verifyToken = require('./authMiddleware.js');
 // Adding a couple of routes to the router using the get() method. After we export the route object
 
 routerAdm.get('/AllAdms', admController.getAllAdms);

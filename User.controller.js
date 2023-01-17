@@ -1,7 +1,7 @@
-const UserModel = require("../Models/User.model.js");
+const UserModel = require("./User.model.js");
 const userController = {};
 const asyncHandler = require("express-async-handler");
-const generateToken = require("../utils/generateToken.js");
+const generateToken = require("./generateToken.js");
 
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");

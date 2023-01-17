@@ -3,19 +3,19 @@
 // Route is a section of Express code that associates an HTTP verb (CRUD), a URL path and a function that is called to handle that pattern
 
 const express = require('express');
-const routerUser = express.Router();
-const userController = require('../Controllers/User.controller.js');
-const verifyToken = require('../middleware/authMiddleware.js');
+const routerAgent = express.Router();
+const agentController = require('./Agent.controller.js');
 // Adding a couple of routes to the router using the get() method. After we export the route object
 
-routerUser.get('/AllUsers', userController.getAllUsers);
-routerUser.post('/create', userController.createUser);
-/*routerUser.post('/signup', userController.signup);
+routerAgent.get('/AllAgents', agentController.getAllAgents);
+//routerAgent.get('/CreateAdm', admController.getAllAdms);
+/*routerUser.post('/create', userController.createUser);
+routerUser.post('/signup', userController.signup);
 routerUser.post('/login', userController.login);
 routerUser.route("/").post(userController.registerUser);
 routerUser.get('/users', verifyToken);*/
 
-routerUser.post("/login", userController.authUser);
+//routerUser.post("/login", userController.authUser);
 
 
-module.exports = routerUser;
+module.exports = routerAgent;
